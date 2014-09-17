@@ -1,0 +1,46 @@
+<!-- <div ng-controller="mainCtrl">
+Form start 
+  Enter the username :  <input type="text" ng-model="username"><br><br><br>
+  Enter the password:<input type="password" ng-model="password"> <br><br><br>
+  <button ng-click="getname()">submit</button>
+  
+    <button ><a href="#/distributiondetail"> Next</a></button> -->
+    
+    
+     <div class="container" ng-controller="mainCtrl">
+<div class="row">
+<div class="col-md-3"></div>
+<div class= "col-xs-12 col-md-6">
+
+
+            <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="email" class="form-control" placeholder="Email address" required autofocus ng-model="username">
+        <input type="password" class="form-control" placeholder="Password" required ng-model="password">
+         <span class="label label-danger" ng-show="login_failure"  style="padding: .2em 7.1em .3em;">Username/Password Incorrect</span>
+        <button class="btn  btn-primary btn-block" type="submit" ng-disabled="loginBtn" ng-click="login()" style="margin-top:5px;">Submit</button>
+        <button class="btn  btn-primary btn-block" type="submit" ng-disabled="resetBtn" ng-click="reset()">Reset</button>
+      </form>
+
+        
+          
+        </div>
+        
+          </div>
+    <!--   <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="email" class="form-control" placeholder="Email address" required autofocus ng-model="username">
+        <input type="password" class="form-control" placeholder="Password" required ng-model="password">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me" > Remember me
+          </label>
+        </div>
+        <button class="btn  btn-primary btn-block" type="submit" ng-click="getname()">Submit</button>
+        <button class="btn  btn-primary btn-block" type="submit">Reset</button>
+      </form> -->
+
+    </div> <!-- /container -->
+    
+    
+<!--</div>  -->

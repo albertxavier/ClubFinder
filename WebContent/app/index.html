@@ -1,0 +1,59 @@
+<html lang="en" ng-app="myapp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Club Finder</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="lib/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lib/bootstrap.min.js"></script>
+<!--Angular call  -->
+
+<script src="lib/angular.js"></script>
+<script src="lib/angular-route.js"></script>
+<script type="text/javascript" src="lib/underscore.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/service.js"></script>
+<!-- <script
+	src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script> -->
+<script type="text/javascript" src="lib/angular-google-maps.min.js"></script>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<!-- <script src="js/googleChartWrap.js" type="text/javascript"></script> -->
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+</head>
+
+<body>
+	
+	<div ng-show="loadingImage">
+		<!-- <img alt="" src="images/loadback.png" height="90px" width="188px" style="z-index: 9998;position: absolute; top: 0%; margin-top:25%; left: 48%;"> -->
+		<!-- <p style="z-index: 10000; position: absolute; top: 0%; margin-top:27%; margin-left:10px ; left: 48%; color: white; font-size: 20px">Loading</p> -->
+		<div style="z-index: 10000; position: absolute;top: 50%;
+left: 50%;
+margin: -50px 0px 0px -50px;">
+			<img src="images/fadingLoading.gif" />
+		</div>
+	</div>
+	<div ng-view ></div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+ <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> 
+       <a class="navbar-brand" href=""> <img alt="" src="images/bngc.png" height="50" width="80" style="margin-top: -19%;"></a>
+      <a class="navbar-brand" href="" style="color:#fff; font-size:23px; margin-left:-6%;"> Club Finder</a>
+       
+       <a class="navbar-brand" href="" style="color:#fff;">
+         <div class="form-group has-feedback" style=" width:150%; margin-top:-3%;">
+  
+   <input id="autocomplete"  class="form-control" placeholder="Enter the address"
+             ng-focus="geolocate()" type="text"></input>
+   </div>
+    </a>  
+       
+    </div>
+ 
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+      <ul class="nav navbar-nav">
+        <li class="">
+        
+       
+   <li>
+        </ul>
+    
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="" style="color:#054B18;font-size:15px;">Search Radius : {{distance}} Miles</a></li>
+      </ul> 
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+ 
+ <div ng-init="getLocation();initialize();">
+<div><span id="title"></span>
+<!-- <span class="info">Marker <strong>A</strong>: <span id="a" class="bool"></span></span> &larr;&diams;&rarr; <span class="info">Marker <strong>B</strong>: <span id="b" class="bool"></span></span> -->
+<!-- <div class="row" style="padding: 10px; background-color: #B2E6FF;">
+<div class="col-md-6 col-md-offset-3">
+<div class="form-group has-feedback" style="margin-bottom: 0px;">
+  
+   <input id="autocomplete"  class="form-control" placeholder="Enter the address"
+             ng-focus="geolocate()" type="text"></input>
+   
+</div>
+</div>
+</div> -->
+</div>
+<div id="map" ></div>
+<!-- <div id="infobox"></div> -->
+</div>
