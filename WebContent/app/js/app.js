@@ -6,7 +6,7 @@ var checkIn=function($location)
 	var sessionData = JSON.parse(sessionStorage.getItem("PROFILE_DETAILS"));
 	if(sessionData == null || sessionData.type!=3)
 	{
-		$location.url("/logintest");
+		$location.url("/login");
 	}
 };
 
